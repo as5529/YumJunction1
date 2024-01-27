@@ -23,8 +23,11 @@ body {
 } /*We will use this to center */
 .grid {
   display: grid;
+  column-gap: 6.4;
   gap: 9.6rem;
   grid-template-columns: 1fr 1fr;
+
+  /*align-items: center;*/
 }
 .grid--2-cols {
   grid-template-columns: 1fr 1fr;
@@ -35,12 +38,14 @@ body {
 .grid--4-col {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-.heading-primary {
-  font-size: 5rem;
+.grid--center-v {
+  align-items: center;
+}
 .heading-primary,
 .heading-secondary {
+.heading-secondary,
+.heading-tertiary {
   font-weight: 700;
-  line-height: 1.05;
   color: #333;
   letter-spacing: -0.5px;
 }
@@ -53,6 +58,11 @@ body {
   font-size: 4.4rem;
   line-height: 1.2;
   margin-bottom: 9.6rem;
+}
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2rem;
+  margin-bottom: 3.2rem;
 }
 .subheading {
   display: block;
@@ -96,11 +106,31 @@ btn:visited {
   /*With the inset keyword the shadow will be added inside*/
   box-shadow: inset 0 0 0 3px #fff;
 }
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: #74b816;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 0.3s;
+}
+.link:hover,
+.link:active {
+  color: #64a707;
+  border-bottom: 1px solid transparent;
+}
 .margin--right--sm {
   margin-right: 1.6rem !important;
 }
+strong {
+  font-weight: 500;
+}
+
 /**********************/
 /* HEADER SECTION*/
+/*********************/
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -152,6 +182,7 @@ btn:visited {
 }
 /*******************/
 /* HERO SECTION*/
+/******************/
 .section-hero {
   background-color: #f4fce3;
   padding: 4.8rem 0 9.6rem 0;
@@ -201,12 +232,68 @@ btn:visited {
   color: #74b816;
   font-weight: 700;
 }
+
+/********************/
+/*   FEATURED IN SECTION */
+/********************/
+.section-featured {
+  padding: 4.8rem 3.2rem 0;
+}
+.heading-featured-in {
+  font-size: 1.4;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2.4rem;
+  color: #999;
+}
+.logos {
+  display: flex;
+  justify-content: space-around;
+}
+.logos img {
+  height: 3.2rem;
+  filter: brightness(0);
+  opacity: 50%;
+}
 /********************/
 /* HOW IT WORKS */
+/********************/
+
 .section-how {
   padding: 9.6rem 0;
-  background-color: #74b816;
 }
+.step-number {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+.step-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*.step-img-box::before,
+.step-img-box::after {
+  content: "";
+  display: block;
+  width: 60%;
+  /*60% of parents width's*/
+/*padding-bottom: 60%;
+  background-color: #82c91e;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}*/
+
 .step-img {
   width: 50%;
-}
+  width: 35%;

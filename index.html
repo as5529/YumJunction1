@@ -66,6 +66,24 @@
           </div>
         </div>
       </section>
+      <section class="section-featured">
+        <div class="container">
+          <h2 class="heading-featured-in">As featured in</h2>
+          <div class="logos">
+            <img src="img/logos/techcrunch.png" alt="Techcrush log" />
+            <img
+              src="img/logos/business-insider.png"
+              alt="business insider logo"
+            />
+            <img
+              src="img/logos/the-new-york-times.png"
+              alt="The new the-new-york-times log"
+            />
+            <img src="img/logos/forbes.png" alt="forbes log" />
+            <img src="img/logos/usa-today.png" alt="usa-today log" />
+          </div>
+        </div>
+      </section>
       <section class="section-how">
         <div class="container">
           <span class="subheading">How it works</span>
@@ -74,65 +92,116 @@
           </h2>
         </div>
         <div class="container grid grid--2-cols">
-          <div>Test1</div>
-          <div>Test2</div>
-          <div>Test3</div>
-          <div>Test4</div>
+        <div class="container grid grid--2-cols grid--center-v">
           <div class="step-text-box">
             <p class="step-number">01</p>
             <h3 class="heading-tertiary">Tell us what you like</h3>
-            <p class="step-description">
-              Explore your culinary preferences effortlessly with YumJunction!
-              Say goodbye to the hassle of deciding what to eat. YumJunction
-              crafts a completely personalized weekly meal plan just for you,
-              ensuring you receive all the essential nutrients and vitamins
-              tailored to your chosen diet!
-            </p>
-          </div>
-          <div class="step-img-box">
-            <img
-              src="img/app/app-screen-1.png"
-              class="step-img"
-              alt="iphone app preference se;lection screen"
-            />
-          </div>
-          <div class="step-img-box">
-            <img
-              src="img/app/app-screen-2.png"
-              class="step-img"
-              alt="iphone app meal approving plan"
-            />
-          </div>
-          <div class="step-text-box">
-            <p class="step-number">02</p>
-            <h3 class="heading-tertiary">Review your weekly culinary lineup</h3>
-            <p class="step-description">
-              Weekly, give the thumbs up to the meal plan curated for you by
-              YumJunction AI. Tweak ingredients, swap full meals, or inject your
-              own recipes for that perfect touch!
-            </p>
+@@ -113,9 +131,7 @@ <h3 class="heading-tertiary">Review your weekly culinary lineup</h3>
           </div>
           <div class="step-text-box">
             <p class="step-number">03</p>
             <h3 class="heading-tertiary">
               Enjoy daily gourmet delights on your schedule
             </h3>
+            <h3 class="heading-tertiary">Enjoy daily gourmet delights</h3>
             <p class="step-description">
               Enjoy daily gourmet delights on your schedule: Our top chefs
               prepare your chosen meals, and we'll deliver them to your doorstep
-              at your preferred time. Modify your delivery timetable and address
-              daily for ultimate flexibility!
-            </p>
-          </div>
-          <div class="step-img-box">
-            <img
-              src="img/app/app-screen-3.png"
-              class="step-img"
-              alt="iphone app delivery screen"
-            />
+@@ -132,6 +148,97 @@ <h3 class="heading-tertiary">
           </div>
         </div>
       </section>
+      <section class="section-meals">
+        <div class="container center-text">
+          <span class="subheading">Meals</span>
+          <h2 class="heading-secondary">
+            YumJunction AI chooses from 5,000+ recipes
+          </h2>
+        </div>
+        <div class="container grid grid--3-col margin-bottom-md">
+          <div class="meal">
+            <img
+              src="img/meals/meal-1.jpg"
+              class="meal-img"
+              alt="Japnese Gyozas"
+            />
+            <div class="meal-content">
+            <div class="meal-tags">
+            <span class="tag tag--vegetarian">Vegetarian</span>
+          </div>
+            <p class="meal-title">Japnese Gyozas</p>
+            <ul class="meal-attributes">
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="bonfire-outline"></ion-icon>
+                <span><strong>700</strong>Calories</span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon"   name="restaurant-outline"></ion-icon>
+                <span>NutriScore &reg; <strong>74</strong></span</li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                <span><strong>4.9</strong> rating (637)</span>
+              </li>
+            </ul>
+          </div>
+          </div>
+
+          <div class="meal">
+            <img
+              src="img/meals/meal-2.jpg"
+              class="meal-img"
+              alt="Japnese Gyozas"
+            />
+            <div class="meal-content">
+            <div class="meal-tags">
+            <span class="tag tag--vegan">Vegan</span>
+            <span class="tag tag--paleo">Paleo</span>
+          </div>
+            <p class="meal-title">Avocado Salad</p>
+            <ul class="meal-attributes">
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="bonfire-outline"></ion-icon>
+                <span><strong>500</strong>Calories</span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon"   name="restaurant-outline"></ion-icon>
+                <span>NutriScore &reg; <strong>92</strong></span</li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                <span><strong>4.7</strong> rating (458)</span>
+              </li>
+            </ul>
+          </div>
+          </div>
+          <div class="diets">
+            <h3 class="heading-tertiary">Works with any diet</h3>
+            <ul class="list">
+              <li class="list-item"><ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>Vegetarian</span></li>
+              <li class="list-item"><ion-icon class="list-icon"name="checkmark-outline"></ion-icon><span>Vegan</span></li>
+              <li class="list-item"><ion-icon class="list-icon"name="checkmark-outline"></ion-icon><span>Pescatarian</span></li>
+              <li class="list-item"><ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>Gluten-free</span></li>
+              <li class="list-item"><ion-icon class="list-icon"name="checkmark-outline"></ion-icon><span>Lactose-free</span></li>
+              <li class="list-item"><ion-icon class="list-icon"name="checkmark-outline"></ion-icon><span>Keto</span></li>
+              <li class="list-item"><ion-icon class="list-icon"name="checkmark-outline"></ion-icon><span>Paleo</span></li>
+              <li class="list-item"><ion-icon class="list-icon"name="checkmark-outline"></ion-icon><span>Low FODMAP</span></li>
+              <li class="list-item"><ion-icon class="list-icon"name="checkmark-outline"></ion-icon><span>Kid-friendly</span></li>
+
+
+            </ul>
+          </div>
+        </div>
+        <div class="container all-recipes">
+          <a href="#" class="link">See all recipes &rarr;</a>
+        </div>
+      </section>
     </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
