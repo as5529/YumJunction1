@@ -5,7 +5,8 @@
 }
 html {
   /*Percentage of the user browser font-size setting
-  10px / 16px = 0.625 = 62.5%*/
+  10px / 16px = 0.625 = 62.5% */
+  /*10px / 16px = 0.625 = 62.5%*/
   font-size: 62.5%;
 }
 body {
@@ -15,6 +16,7 @@ body {
   color: #555;
 }
 /*********************/
+/* GENERAL REUSABLE COMPONENT'S*/
 /* GENERAL REUSABLE COMPONENTS*/
 .container {
   max-width: 120rem;
@@ -26,7 +28,6 @@ body {
   column-gap: 6.4;
   gap: 9.6rem;
   grid-template-columns: 1fr 1fr;
-
   /*align-items: center;*/
 }
 .grid--2-cols {
@@ -42,7 +43,6 @@ body {
   align-items: center;
 }
 .heading-primary,
-.heading-secondary {
 .heading-secondary,
 .heading-tertiary {
   font-weight: 700;
@@ -126,11 +126,9 @@ btn:visited {
 strong {
   font-weight: 500;
 }
-
 /**********************/
 /* HEADER SECTION*/
 /*********************/
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -232,7 +230,6 @@ strong {
   color: #74b816;
   font-weight: 700;
 }
-
 /********************/
 /*   FEATURED IN SECTION */
 /********************/
@@ -260,7 +257,6 @@ strong {
 /********************/
 /* HOW IT WORKS */
 /********************/
-
 .section-how {
   padding: 9.6rem 0;
 }
@@ -293,15 +289,12 @@ strong {
   transform: translate(-50%, -50%);
   border-radius: 50%;
 }*/
-
 .step-img {
-  width: 50%;
   width: 35%;
 }
 /********************/
 /* MEALS SECTION */
 /********************/
-
 .section-meals {
   padding: 9.6rem 0;
 }
@@ -398,4 +391,30 @@ strong {
 }
 .center-text {
   align-items: center;
+}
+
+/**********************/
+/* TESTIMONIALS SECTION*/
+/*********************/
+.section-testimonials {
+  padding: 9.6rem 0;
+}
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4.8rem;
+}
+.testimonial-img {
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+.testimonial-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+.testimonial-name {
+  font-size: 1.6rem;
+  color: #777;
 }
