@@ -5,8 +5,7 @@
 }
 html {
   /*Percentage of the user browser font-size setting
-  10px / 16px = 0.625 = 62.5% */
-  /*10px / 16px = 0.625 = 62.5%*/
+  10px / 16px = 0.625 = 62.5%*/
   font-size: 62.5%;
 }
 body {
@@ -16,7 +15,6 @@ body {
   color: #555;
 }
 /*********************/
-/* GENERAL REUSABLE COMPONENT'S*/
 /* GENERAL REUSABLE COMPONENTS*/
 .container {
   max-width: 120rem;
@@ -178,9 +176,11 @@ strong {
 .nav-cta:active {
   background-color: #f4fce3;
 }
+
 /*******************/
 /* HERO SECTION*/
 /******************/
+
 .section-hero {
   background-color: #f4fce3;
   padding: 4.8rem 0 9.6rem 0;
@@ -352,7 +352,6 @@ strong {
 .tag--paleo {
   background-color: #ffe066;
 }
-
 .meal-img {
   width: 100%;
 }
@@ -364,7 +363,6 @@ strong {
 .meal-content {
   padding: 4.8rem;
 }
-
 .list {
   list-style: none;
   display: flex;
@@ -392,20 +390,29 @@ strong {
 .center-text {
   align-items: center;
 }
-
 /**********************/
 /* TESTIMONIALS SECTION*/
 /*********************/
 .section-testimonials {
   padding: 9.6rem 0;
+  background-color: #f4fce3;
+  display: grid;
+  grid-template-columns: 55fr 45fr; /*We can use 1fs as % so 50fr 50fr will do the same as 1fr 1fr*/
+  align-items: center;
+}
+.testimonials-container {
+  padding: 9.6rem;
 }
 .testimonials {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4.8rem;
+  row-gap: 4.8rem;
+  column-gap: 8rem;
 }
 .testimonial-img {
   width: 6.4rem;
+  width: 4.8rem;
   border-radius: 50%;
   margin-bottom: 1.2rem;
 }
@@ -417,4 +424,21 @@ strong {
 .testimonial-name {
   font-size: 1.6rem;
   color: #777;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 1.6rem;
+  gap: 1.6rem;
+}
+.gallery-item img {
+  display: block;
+  width: 100%;
+  transition: all 0.4s;
+}
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+.gallery-item {
+  overflow: hidden;
 }
