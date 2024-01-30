@@ -146,11 +146,9 @@ strong {
 .list-item {
   font-size: 1.8rem;
   display: flex;
-  align-item: center;
   align-items: center;
   gap: 1.6rem;
 }
-
 /**********************/
 /* HEADER SECTION*/
 /*********************/
@@ -528,13 +526,11 @@ strong {
   margin-top: 4.8rem;
   text-align: center;
 }
-
 .plan-details {
   font-size: 1.6rem;
   line-height: 1.6;
   text-align: center;
 }
-
 /*********************/
 /*  FEATURE SECTION */
 /*******************/
@@ -567,7 +563,6 @@ strong {
     /*align-items: center;*/
   }
 }
-
 /*********************/
 /*  CTA SECTION */
 /*******************/
@@ -597,10 +592,26 @@ strong {
     ),
     url("../img/eating.jpg");
   /*../ means going to the parent folder*/
-
   background-size: cover; /*This will help the image to cover everything so basically be on the top*/
-
   background-position: center;
 }
 .cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #2e1907;
+}
+.cta,
+.heading-secondary {
+  color: #2e1907;
+  margin-bottom: 3.2rem;
+}
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
 }
