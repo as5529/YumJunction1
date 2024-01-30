@@ -567,3 +567,40 @@ strong {
     /*align-items: center;*/
   }
 }
+
+/*********************/
+/*  CTA SECTION */
+/*******************/
+.section-cta {
+  padding: 9.6rem;
+}
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /*Here 2fr means the first div will have 2/3rd of the sapce and the second div will have 1/3rd of the div*/
+  /*background-color: #74b816;*/
+  box-shadow: 0 2.4rem 4.8rem #919090ab;
+  height: 50rem;
+  border-radius: 10px;
+  /*For gradient we use the background-image:linear-gradient and then we can specify two color*/
+  background-image: linear-gradient(
+    to right bottom,
+    hsl(85, 53%, 64%),
+    #75b816
+  );
+  overflow: hidden;
+}
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      hsla(85, 53%, 64%, 0.271),
+      hsla(85, 79%, 40%, 0.259)
+    ),
+    url("../img/eating.jpg");
+  /*../ means going to the parent folder*/
+
+  background-size: cover; /*This will help the image to cover everything so basically be on the top*/
+
+  background-position: center;
+}
+.cta-text-box {
+}
