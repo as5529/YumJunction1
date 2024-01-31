@@ -84,7 +84,6 @@ body {
 }
 .btn,
 .btn:link,
-btn:visited {
 .btn:visited {
   display: inline-block;
   text-decoration: none;
@@ -92,11 +91,9 @@ btn:visited {
   font-weight: 600;
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
-
   border: none;
   cursor: pointer;
   font-family: inherit;
-
   /*To transition b/w two buttons using an animation and put it in the original state*/
   transition: all 0.3s;
 }
@@ -136,7 +133,6 @@ btn:visited {
   color: #64a707;
   border-bottom: 1px solid transparent;
 }
-
 .btn--form {
   background-color: #233707;
   color: #f4fce3;
@@ -147,7 +143,6 @@ btn:visited {
   background-color: #fff;
   color: #555;
 }
-
 .margin--right--sm {
   margin-right: 1.6rem !important;
 }
@@ -171,14 +166,12 @@ strong {
   align-items: center;
   gap: 1.6rem;
 }
-
 *:focus {
   outline: none;
   /* outline: 4px dotted #64a707;*/
   /* outline-offset: 8px;*/
   box-shadow: 0 0 0 0.8rem #75b8166e;
 }
-
 /**********************/
 /* HEADER SECTION*/
 /*********************/
@@ -604,7 +597,6 @@ strong {
   grid-template-columns: 2fr 1fr; /*Here 2fr means the first div will have 2/3rd of the sapce and the second div will have 1/3rd of the div*/
   /*background-color: #74b816;*/
   box-shadow: 0 2.4rem 4.8rem #919090ab;
-  height: 50rem;
   border-radius: 10px;
   /*For gradient we use the background-image:linear-gradient and then we can specify two color*/
   background-image: linear-gradient(
@@ -663,11 +655,16 @@ strong {
   border-radius: 0.9rem;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
-
 .cta-form input::placeholder {
   color: #aaa;
 }
 .cta *:focus {
   outline: none;
   box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+
+/************************/
+/*    FOOTER           */
+.footer {
+  padding: 9.6rem 0;
 }
