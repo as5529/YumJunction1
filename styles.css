@@ -45,6 +45,9 @@ body {
 .grid--4-col {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+.grid--5-col {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
 .grid--center-v {
   align-items: center;
 }
@@ -79,14 +82,21 @@ body {
   margin-bottom: 1.6rem;
   letter-spacing: 0.75px;
 }
+.btn,
 .btn:link,
 btn:visited {
+.btn:visited {
   display: inline-block;
   text-decoration: none;
   font-size: 2rem;
   font-weight: 600;
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
+
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+
   /*To transition b/w two buttons using an animation and put it in the original state*/
   transition: all 0.3s;
 }
@@ -126,6 +136,18 @@ btn:visited {
   color: #64a707;
   border-bottom: 1px solid transparent;
 }
+
+.btn--form {
+  background-color: #233707;
+  color: #f4fce3;
+  align-self: end;
+  padding: 1.2rem;
+}
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
+}
+
 .margin--right--sm {
   margin-right: 1.6rem !important;
 }
@@ -149,6 +171,14 @@ strong {
   align-items: center;
   gap: 1.6rem;
 }
+
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #64a707;*/
+  /* outline-offset: 8px;*/
+  box-shadow: 0 0 0 0.8rem #75b8166e;
+}
+
 /**********************/
 /* HEADER SECTION*/
 /*********************/
@@ -614,4 +644,30 @@ strong {
   grid-template-columns: 1fr 1fr;
   column-gap: 3.2rem;
   row-gap: 2.4rem;
+}
+.cta-form label {
+  display: block; /*Used to give it own line*/
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+.cta-form input,
+.cta-form select {
+  width: 100%; /*Help them occupy their entire parent*/
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #f4fce3;
+  border-radius: 0.9rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
+}
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
 }
