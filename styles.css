@@ -14,9 +14,11 @@ body {
   font-weight: 400;
   color: #555;
 }
+
 /*********************/
 /* GENERAL REUSABLE COMPONENTS*/
 /***********************/
+
 .container {
   max-width: 120rem;
   padding: 0 3.2rem;
@@ -33,9 +35,11 @@ body {
 /*.grid:last-child {
   margin-bottom: 0;
 }*/
+
 .grid:not(:last-child) {
   margin-bottom: 9.6rem;
 }
+
 .grid--2-cols {
   grid-template-columns: 1fr 1fr;
 }
@@ -91,9 +95,11 @@ body {
   font-weight: 600;
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
+
   border: none;
   cursor: pointer;
   font-family: inherit;
+
   /*To transition b/w two buttons using an animation and put it in the original state*/
   transition: all 0.3s;
 }
@@ -133,6 +139,7 @@ body {
   color: #64a707;
   border-bottom: 1px solid transparent;
 }
+
 .btn--form {
   background-color: #233707;
   color: #f4fce3;
@@ -143,6 +150,7 @@ body {
   background-color: #fff;
   color: #555;
 }
+
 .margin--right--sm {
   margin-right: 1.6rem !important;
 }
@@ -166,15 +174,18 @@ strong {
   align-items: center;
   gap: 1.6rem;
 }
+
 *:focus {
   outline: none;
   /* outline: 4px dotted #64a707;*/
   /* outline-offset: 8px;*/
   box-shadow: 0 0 0 0.8rem #75b8166e;
 }
+
 /**********************/
 /* HEADER SECTION*/
 /*********************/
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -194,7 +205,7 @@ strong {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 3.2rem;
+  gap: 3rem;
 }
 .main-nav-link:link,
 .main-nav-link:visited {
@@ -218,19 +229,23 @@ strong {
   color: #fff;
   background-color: #74b816;
 }
+
 .main-nav-link,
 .nav-cta:hover,
 .main-nav-link,
 .nav-cta:active {
   background-color: #f4fce3;
 }
+
 /*******************/
 /* HERO SECTION*/
 /******************/
+
 .section-hero {
   background-color: #f4fce3;
   padding: 4.8rem 0 9.6rem 0;
 }
+
 .hero {
   max-width: 130rem;
   margin: 0 auto;
@@ -248,6 +263,7 @@ strong {
 .hero-img {
   width: 100%; /*as it will fill its half container with 100%*/
 }
+
 .delivered-meals {
   display: flex;
   align-items: center;
@@ -276,6 +292,7 @@ strong {
   color: #74b816;
   font-weight: 700;
 }
+
 /********************/
 /*   FEATURED IN SECTION */
 /********************/
@@ -303,6 +320,7 @@ strong {
 /********************/
 /* HOW IT WORKS */
 /********************/
+
 .section-how {
   padding: 9.6rem 0;
 }
@@ -329,18 +347,21 @@ strong {
   /*60% of parents width's*/
 /*padding-bottom: 60%;
   background-color: #82c91e;
+
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
 }*/
+
 .step-img {
   width: 35%;
 }
 /********************/
 /* MEALS SECTION */
 /********************/
+
 .section-meals {
   padding: 9.6rem 0;
 }
@@ -398,6 +419,7 @@ strong {
 .tag--paleo {
   background-color: #ffe066;
 }
+
 .meal-img {
   width: 100%;
 }
@@ -409,6 +431,7 @@ strong {
 .meal-content {
   padding: 4.8rem;
 }
+
 .list {
   list-style: none;
   display: flex;
@@ -436,6 +459,7 @@ strong {
 .center-text {
   align-items: center;
 }
+
 /**********************/
 /* TESTIMONIALS SECTION*/
 /*********************/
@@ -485,6 +509,7 @@ strong {
 .gallery-item {
   overflow: hidden;
 }
+
 /*********************/
 /*  PRICING SECTION  */
 /*********************/
@@ -529,6 +554,7 @@ strong {
   letter-spacing: 0.75;
   margin-bottom: 3.2rem;
 }
+
 .plan-price {
   font-size: 6.2rem;
   font-weight: 600;
@@ -549,11 +575,13 @@ strong {
   margin-top: 4.8rem;
   text-align: center;
 }
+
 .plan-details {
   font-size: 1.6rem;
   line-height: 1.6;
   text-align: center;
 }
+
 /*********************/
 /*  FEATURE SECTION */
 /*******************/
@@ -586,11 +614,11 @@ strong {
     /*align-items: center;*/
   }
 }
+
 /*********************/
 /*  CTA SECTION */
 /*******************/
 .section-cta {
-  padding: 9.6rem;
   /*Top/right/bottom/left*/
   /* padding: 9.6rem 0 12.8rem 0;*/
 
@@ -619,7 +647,9 @@ strong {
     ),
     url("../img/eating.jpg");
   /*../ means going to the parent folder*/
+
   background-size: cover; /*This will help the image to cover everything so basically be on the top*/
+
   background-position: center;
 }
 .cta-text-box {
@@ -660,6 +690,7 @@ strong {
   border-radius: 0.9rem;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
+
 .cta-form input::placeholder {
   color: #aaa;
 }
@@ -672,7 +703,6 @@ strong {
 /*    FOOTER           */
 /************************/
 .footer {
-  padding: 9.6rem 0;
   padding: 12.8rem 0;
   border-top: 1px solid #eee;
 }
